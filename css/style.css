@@ -238,3 +238,94 @@ header .right-block .social-icons div:hover a {
     color: #fff;
   }
 }
+
+.banner-block {
+  background: url(../img/banner.png) no-repeat center/cover;
+}
+
+.banner-block .plashka {
+  margin-top: 275px;
+  margin-left: 28px;
+  margin-bottom: 48px;
+  width: 230px;
+  height: 230px;
+  border-radius: 230px;
+  background: rgba(255, 235, 59, 0.8);
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Trebuchet;
+}
+
+.banner-block .plashka h1 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.banner-block .plashka span {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.banner-block .plashka .tour-code {
+  font-size: 24px;
+  font-weight: 700;
+  background: #000;
+  color: #fff;
+  padding: 0 5px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .banner-block .plashka {
+    margin-top: 230px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .banner-block .plashka {
+    margin-top: 125px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-block .plashka {
+    margin-top: 110px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+  }
+  .banner-block .plashka h1 {
+    font-size: 18px;
+  }
+  .banner-block .plashka span {
+    font-size: 12px;
+  }
+  .banner-block .plashka .tour-code {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .banner-block .plashka {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}
