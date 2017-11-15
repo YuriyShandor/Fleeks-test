@@ -1,0 +1,337 @@
+// to compile...
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  //border: 1px solid red;
+}
+
+@font-face {
+  font-family: Trebuchet;
+  src: url(../fonts/trebucbd.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Trebuchet;
+  src: url(../fonts/trebuc.ttf);
+  font-weight: 400;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  width: 100%;
+  background: #00bff3;
+  padding: 30px 0;
+
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .left-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    .header-logo {
+      margin-right: 15px;
+    }
+  }
+
+  .right-block {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    .tell-number {
+      margin-left: 62px;
+      font-size: 30px;
+    }
+
+    .get-call {
+      text-decoration: underline;
+      -webkit-text-decoration-style: dotted;
+              text-decoration-style: dotted;
+      cursor: pointer;
+    }
+
+    .social-icons {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+
+      div {
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background: #fff;
+        display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transition: all, 0.5s;
+        transition: all, 0.5s;
+
+
+        &:first-child {
+          margin-left: 0;
+
+        }
+
+        a {
+          padding: 0;
+          color: #00bff3;
+          -webkit-transition: all, .5s;
+          transition: all, .5s;
+        }
+
+        &:hover {
+          background: darken(#00bff3, 5%);
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 1199px) {
+  header {
+    .right-block {
+      .tell-number {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 991px) {
+  header {
+    width: 100%;
+    background: #00bff3;
+    padding: 30px 0;
+
+    .left-block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+    }
+
+    .right-block {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      margin-top: 30px;
+
+      .tell-number {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  header {
+    padding: 20px 0;
+
+    .right-block {
+      margin-top: 20px;
+
+      .tell-number {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 567px) {
+  header {
+    padding: 20px 0;
+
+    span {
+      font-size: 14px;
+    }
+
+    .left-block {
+      .header-logo {
+        img {
+          width: 125px;
+        }
+      }
+    }
+
+    .right-block {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+
+      .social-icons {
+        display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin: 0 auto;
+
+        div {
+          margin-left: 10px;
+          width: 30px;
+          height: 30px;
+          border-radius: 30px;
+          background: #fff;
+          display: -ms-flex;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-transition: all, 0.5s;
+          transition: all, 0.5s;
+
+
+          &:first-child {
+            margin-left: 0;
+
+          }
+
+          a {
+            padding: 0;
+            color: #00bff3;
+            -webkit-transition: all, .5s;
+            transition: all, .5s;
+          }
+
+          &:hover {
+            background: darken(#00bff3, 5%);
+
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 567px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 567px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 567px) {
+
+}
+
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+
+}
+
+@media only screen and (max-width : 567px) {
+
+}
