@@ -31,6 +31,10 @@ body {
           flex-direction: column;
 }
 
+.container {
+  padding: 0;
+}
+
 header {
   width: 100%;
   background: #00bff3;
@@ -140,6 +144,10 @@ header {
 }
 
 @media only screen and (max-width : 991px) {
+  .container {
+    padding: 0 15px;
+  }
+
   header {
     width: 100%;
     background: #00bff3;
@@ -268,6 +276,12 @@ header {
   }
 }
 
+.section-banner {
+  .container {
+    padding: 0 15px;
+  }
+}
+
 .banner-block {
   background: url(../img/banner.png) no-repeat center / cover;
   .plashka {
@@ -327,6 +341,12 @@ header {
 }
 
 @media only screen and (max-width : 991px) {
+  .section-banner {
+    .container {
+      padding: 0 30px;
+    }
+  }
+
   .banner-block {
     .plashka {
       margin-top: 125px;
@@ -393,7 +413,7 @@ header {
       font-family: Trebuchet;
       font-size: 35px;
       font-weight: 700;
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid #7f7f7f;
     }
 
     .stars {
@@ -501,7 +521,112 @@ header {
   }
 }
 
+.extrim {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+
+  .extrim-block {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+    img {
+      width: 99%;
+    }
+
+    .extrim-block__about {
+      width: 99%;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top: 20px;
+
+      .extrim-titile {
+        h1 {
+          font-family: Trebuchet;
+          font-size: 30px;
+          font-weight: 700;
+          margin: 0;
+          border-bottom: 1px solid #ccc;
+        }
+
+        span {
+          margin-top: 10px;
+          font-size: 14px;
+          font-weight: 400;
+          color: #777;
+        }
+      }
+
+      .extrim-price {
+        display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        margin-top: -30px;
+
+        .extrim-price_now {
+          font-family: Trebuchet;
+          font-size: 50px;
+          font-weight: 700;
+        }
+
+        .extrim-price_was {
+          font-family: Trebuchet;
+          font-size: 20px;
+          font-weight: 400;
+          color: #777;
+          text-decoration: line-through;
+          -webkit-text-decoration-color: red;
+                  text-decoration-color: red;
+          margin-top: -15px;
+        }
+      }
+    }
+  }
+
+  .extrim-block_01 {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 0;
+  }
+
+  .extrim-block_02 {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-right: 0;
+  }
+}
+
 @media only screen and (max-width : 1199px) {
+  .row {
+    margin: 0;
+  }
+
   .days-amount__block {
     -webkit-transform: translateY(-30px);
             transform: translateY(-30px);
@@ -514,15 +639,63 @@ header {
       font-size: 80px;
     }
   }
+
+  .extrim {
+    .extrim-block_01 {
+      padding-left: 15px;
+    }
+
+    .extrim-block_02 {
+      padding-right: 15px;
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
   .days-amount__block {
     display: none;
   }
+
+  .extrim {
+    margin-top: 20px;
+
+    .extrim-block {
+      img {
+        width: 100%;
+      }
+
+      .extrim-block__about {
+        width: 100%;
+        margin-top: 15px;
+
+        .extrim-titile {
+          h1 {
+            font-size: 20px;
+          }
+
+          span {
+            font-size: 12px;
+          }
+        }
+
+        .extrim-price {
+          margin-top: -15px;
+
+          .extrim-price_now {
+            font-size: 30px;
+          }
+
+          .extrim-price_was {
+            font-size: 15px;
+            margin-top: -10px;
+          }
+        }
+      }
+    }
+  }
 }
 
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 768px) {
   .aquamarine-hotel {
     margin-top: 20px;
 
@@ -545,6 +718,16 @@ header {
       .hotel__rating {
         margin-right: 10px;
       }
+    }
+  }
+
+  .extrim {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 0;
+
+    .extrim-block {
+      margin-top: 20px;
     }
   }
 }
@@ -577,7 +760,7 @@ header {
       margin-top: 20px;
 
       .total-rating {
-        margin: 0 75px;
+        margin: 0 50px;
       }
 
       .hotel__rating {
@@ -586,6 +769,33 @@ header {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+      }
+    }
+  }
+
+  .extrim {
+    .extrim-block {
+      .extrim-block__about {
+        margin-top: 10px;
+
+        .extrim-titile {
+          h1 {
+            font-size: 17px;
+          }
+        }
+
+        .extrim-price {
+          margin-top: -10px;
+
+          .extrim-price_now {
+            font-size: 24px;
+          }
+
+          .extrim-price_was {
+            font-size: 12px;
+            margin-top: -7px;
+          }
+        }
       }
     }
   }
