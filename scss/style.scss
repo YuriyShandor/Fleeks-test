@@ -18,6 +18,18 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: Minion;
+  src: url(../fonts/minionpro-bold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Minion;
+  src: url(../fonts/minionpro-regular.otf);
+  font-weight: 400;
+}
+
 body {
   font-family: Arial, sans-serif;
   padding: 0;
@@ -82,52 +94,52 @@ header {
               text-decoration-style: dotted;
       cursor: pointer;
     }
+  }
+}
 
-    .social-icons {
-      display: -ms-flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
+.social-icons {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 
-      div {
-        margin-left: 10px;
-        width: 30px;
-        height: 30px;
-        border-radius: 30px;
-        background: #fff;
-        display: -ms-flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-transition: all, 0.5s;
-        transition: all, 0.5s;
+  div {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background: #fff;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all, 0.5s;
+    transition: all, 0.5s;
 
 
-        &:first-child {
-          margin-left: 0;
+    &:first-child {
+      margin-left: 0;
 
-        }
+    }
 
-        a {
-          padding: 0;
-          color: #00bff3;
-          -webkit-transition: all, .5s;
-          transition: all, .5s;
-        }
+    a {
+      padding: 0;
+      color: #00bff3;
+      -webkit-transition: all, .5s;
+      transition: all, .5s;
+    }
 
-        &:hover {
-          background: darken(#00bff3, 5%);
+    &:hover {
+      background: darken(#00bff3, 5%);
 
-          a {
-            color: #fff;
-          }
-        }
+      a {
+        color: #fff;
       }
     }
   }
@@ -222,55 +234,7 @@ header {
           flex-wrap: wrap;
 
       .social-icons {
-        display: -ms-flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
         margin: 0 auto;
-
-        div {
-          margin-left: 10px;
-          width: 30px;
-          height: 30px;
-          border-radius: 30px;
-          background: #fff;
-          display: -ms-flex;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          -webkit-transition: all, 0.5s;
-          transition: all, 0.5s;
-
-
-          &:first-child {
-            margin-left: 0;
-
-          }
-
-          a {
-            padding: 0;
-            color: #00bff3;
-            -webkit-transition: all, .5s;
-            transition: all, .5s;
-          }
-
-          &:hover {
-            background: darken(#00bff3, 5%);
-
-            a {
-              color: #fff;
-            }
-          }
-        }
       }
     }
   }
@@ -801,6 +765,348 @@ header {
   }
 }
 
+.interesting-physics {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+
+  h1 {
+    margin: 0;
+    font-family: Trebuchet;
+    font-size: 50px;
+    font-weight: 700;
+  }
+}
+
+.text-content {
+  margin-top: 25px;
+
+  &__main {
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.25;
+    }
+
+    .p_bold {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    blockquote {
+      margin-left: 25px;
+      border-left: 3px solid #33ccf5;
+      padding: 15px 10px;
+      background: #f0fbfe;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .table {
+      margin-top: 30px;
+      border-radius: 5px;
+
+      th {
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      thead {
+        background: #ebebeb;
+
+        th {
+          border-bottom: 1px solid #777777;
+        }
+      }
+
+      tbody {
+        tr {
+          border-bottom: 1px solid #ebebeb;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          td {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 20px;
+
+      li {
+        list-style: none;
+        margin-left: 30px;
+
+        &::before {
+          content: '\2014';
+          position: absolute;
+          margin-left: -20px;
+        }
+      }
+    }
+  }
+
+  &__sidebar {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 45px;
+    font-family: Trebuchet;
+
+    span {
+      margin-top: 140px;
+      margin-bottom: -20px;
+      font-size: 100px;
+      font-weight: 400;
+      color: #777;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      color: #777;
+    }
+  }
+}
+
+.my-time {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ff0000;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  padding-left: 15px;
+
+  .time-for-psd {
+    width: 40px;
+    border-bottom: 2px solid red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: -5px;
+  }
+}
+
+@media only screen and (max-width : 1199px) {
+  .interesting-physics {
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    h1 {
+      font-size: 42px;
+    }
+  }
+
+  .text-content {
+    &__sidebar {
+      padding-left: 35px;
+
+      span {
+        margin-top: 190px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 991px) {
+  .interesting-physics {
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    h1 {
+      font-size: 36px;
+      text-align: center;
+    }
+  }
+
+  .text-content {
+    &__sidebar {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-left: 15px;
+
+      span {
+        margin: 0;
+        font-size: 60px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 20px;
+        margin-left: 30px;
+        text-align: center;
+      }
+
+      p {
+        margin: 0;
+        font-size: 16px;
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .my-time {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .interesting-physics {
+    margin-top: 40px;
+
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  .text-content {
+    &__main {
+      .table {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 567px) {
+  .interesting-physics {
+    h1 {
+      font-size: 26px;
+    }
+  }
+
+  .text-content {
+    &__sidebar {
+      padding-left: 0;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+
+      span {
+        margin: 0;
+        font-size: 30px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 14px;
+        margin-left: 30px;
+        text-align: center;
+      }
+
+      p {
+        margin: 0;
+        font-size: 12px;
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .my-time {
+    font-size: 14px;
+
+    .time-for-psd {
+      width: 30px;
+      border-bottom: 2px solid red;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-bottom: -5px;
+    }
+  }
+}
+
+.footer-block {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 15px;
+  border-top: 1px solid #000;
+
+  span {
+    font-size: 12px;
+    font-weight: 400;
+    width: 60%;
+  }
+
+  .social-icons {
+    div {
+      background: #00bff3;
+
+      a {
+        color: #fff;
+      }
+
+      &:hover {
+        background: darken(#00bff3, 5%);
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
 
 @media only screen and (max-width : 1199px) {
 
@@ -815,22 +1121,9 @@ header {
 }
 
 @media only screen and (max-width : 567px) {
-
-}
-
-
-@media only screen and (max-width : 1199px) {
-
-}
-
-@media only screen and (max-width : 991px) {
-
-}
-
-@media only screen and (max-width : 767px) {
-
-}
-
-@media only screen and (max-width : 567px) {
-
+  .footer-block {
+    span {
+      width: 45%;
+    }
+  }
 }

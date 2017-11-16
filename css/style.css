@@ -15,6 +15,18 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: Minion;
+  src: url(../fonts/minionpro-bold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Minion;
+  src: url(../fonts/minionpro-regular.otf);
+  font-weight: 400;
+}
+
 body {
   font-family: Arial, sans-serif;
   padding: 0;
@@ -82,14 +94,14 @@ header .right-block .get-call {
   cursor: pointer;
 }
 
-header .right-block .social-icons {
+.social-icons {
   display: -ms-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .right-block .social-icons div {
+.social-icons div {
   margin-left: 10px;
   width: 30px;
   height: 30px;
@@ -109,22 +121,22 @@ header .right-block .social-icons div {
   transition: all, 0.5s;
 }
 
-header .right-block .social-icons div:first-child {
+.social-icons div:first-child {
   margin-left: 0;
 }
 
-header .right-block .social-icons div a {
+.social-icons div a {
   padding: 0;
   color: #00bff3;
   -webkit-transition: all, .5s;
   transition: all, .5s;
 }
 
-header .right-block .social-icons div:hover {
+.social-icons div:hover {
   background: #00abda;
 }
 
-header .right-block .social-icons div:hover a {
+.social-icons div:hover a {
   color: #fff;
 }
 
@@ -201,48 +213,7 @@ header .right-block .social-icons div:hover a {
     flex-wrap: wrap;
   }
   header .right-block .social-icons {
-    display: -ms-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     margin: 0 auto;
-  }
-  header .right-block .social-icons div {
-    margin-left: 10px;
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    background: #fff;
-    display: -ms-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-transition: all, 0.5s;
-    transition: all, 0.5s;
-  }
-  header .right-block .social-icons div:first-child {
-    margin-left: 0;
-  }
-  header .right-block .social-icons div a {
-    padding: 0;
-    color: #00bff3;
-    -webkit-transition: all, .5s;
-    transition: all, .5s;
-  }
-  header .right-block .social-icons div:hover {
-    background: #00abda;
-  }
-  header .right-block .social-icons div:hover a {
-    color: #fff;
   }
 }
 
@@ -707,5 +678,319 @@ header .right-block .social-icons div:hover a {
   .extrim .extrim-block .extrim-block__about .extrim-price .extrim-price_was {
     font-size: 12px;
     margin-top: -7px;
+  }
+}
+
+.interesting-physics {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+.interesting-physics h1 {
+  margin: 0;
+  font-family: Trebuchet;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.text-content {
+  margin-top: 25px;
+}
+
+.text-content__main p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.text-content__main .p_bold {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.text-content__main h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.text-content__main blockquote {
+  margin-left: 25px;
+  border-left: 3px solid #33ccf5;
+  padding: 15px 10px;
+  background: #f0fbfe;
+}
+
+.text-content__main blockquote p {
+  margin: 0;
+}
+
+.text-content__main h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.text-content__main .table {
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.text-content__main .table th {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.text-content__main .table thead {
+  background: #ebebeb;
+}
+
+.text-content__main .table thead th {
+  border-bottom: 1px solid #777777;
+}
+
+.text-content__main .table tbody tr {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.text-content__main .table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.text-content__main .table tbody tr td {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text-content__main ul {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.text-content__main ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+.text-content__main ul li::before {
+  content: '\2014';
+  position: absolute;
+  margin-left: -20px;
+}
+
+.text-content__sidebar {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 45px;
+  font-family: Trebuchet;
+}
+
+.text-content__sidebar span {
+  margin-top: 140px;
+  margin-bottom: -20px;
+  font-size: 100px;
+  font-weight: 400;
+  color: #777;
+}
+
+.text-content__sidebar h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.text-content__sidebar p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #777;
+}
+
+.my-time {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ff0000;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+.my-time .time-for-psd {
+  width: 40px;
+  border-bottom: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: -5px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .interesting-physics {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .interesting-physics h1 {
+    font-size: 42px;
+  }
+  .text-content__sidebar {
+    padding-left: 35px;
+  }
+  .text-content__sidebar span {
+    margin-top: 190px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .interesting-physics {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .interesting-physics h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .text-content__sidebar {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 15px;
+  }
+  .text-content__sidebar span {
+    margin: 0;
+    font-size: 60px;
+  }
+  .text-content__sidebar h1 {
+    margin: 0;
+    font-size: 20px;
+    margin-left: 30px;
+    text-align: center;
+  }
+  .text-content__sidebar p {
+    margin: 0;
+    font-size: 16px;
+    margin-left: 30px;
+  }
+  .my-time {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .interesting-physics {
+    margin-top: 40px;
+  }
+  .interesting-physics h1 {
+    font-size: 30px;
+  }
+  .text-content__main .table {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .interesting-physics h1 {
+    font-size: 26px;
+  }
+  .text-content__sidebar {
+    padding-left: 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .text-content__sidebar span {
+    margin: 0;
+    font-size: 30px;
+  }
+  .text-content__sidebar h1 {
+    margin: 0;
+    font-size: 14px;
+    margin-left: 30px;
+    text-align: center;
+  }
+  .text-content__sidebar p {
+    margin: 0;
+    font-size: 12px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .my-time {
+    font-size: 14px;
+  }
+  .my-time .time-for-psd {
+    width: 30px;
+    border-bottom: 2px solid red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-bottom: -5px;
+  }
+}
+
+.footer-block {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 15px;
+  border-top: 1px solid #000;
+}
+
+.footer-block span {
+  font-size: 12px;
+  font-weight: 400;
+  width: 60%;
+}
+
+.footer-block .social-icons div {
+  background: #00bff3;
+}
+
+.footer-block .social-icons div a {
+  color: #fff;
+}
+
+.footer-block .social-icons div:hover {
+  background: #00abda;
+}
+
+.footer-block .social-icons div:hover a {
+  color: #fff;
+}
+
+@media only screen and (max-width: 567px) {
+  .footer-block span {
+    width: 45%;
   }
 }
